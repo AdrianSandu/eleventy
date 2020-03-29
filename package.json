@@ -1,0 +1,23 @@
+{
+  "name": "eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianSandu/eleventy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENCE",
+  "bugs": {
+    "url": "https://github.com/AdrianSandu/eleventy/issues"
+  },
+  "homepage": "https://github.com/AdrianSandu/eleventy#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
