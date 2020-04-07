@@ -1,4 +1,4 @@
 {
-    "layout": "article.liquid",
+    "layout": "layouts/article-single.liquid",
 	"tags": ["articles"]
 }

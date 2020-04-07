@@ -1,5 +1,5 @@
 ---
-layout: article-listing.liquid
+layout: layouts/article-listing.liquid
 pageTitle: This is the Articles Listing page
 ---
 
