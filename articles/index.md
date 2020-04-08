@@ -1,5 +1,6 @@
 ---
 layout: layouts/article-listing.liquid
+eleventyExcludeFromCollections: true
 pageTitle: This is the Articles Listing page
 ---
 

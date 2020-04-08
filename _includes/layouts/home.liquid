@@ -15,7 +15,8 @@ layout: layouts/base.liquid
 
 <hr>
 
-{% for article in collections.articles %}
-	<h2><a href="{{ post.url }}">{{ article.data.pageTitle }}</a></h2>
+{%- assign articles = collections.articles -%}
+{%- for article in articles %}
+	<h2><a href="{{ article.url }}">{{ article.data.pageTitle }}</a></h2>
 	<em>{{ article.date | date: "%Y-%m-%d" }}</em>
 {% endfor %}
