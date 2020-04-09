@@ -7,11 +7,9 @@
   <meta name="author" content="Adrian Sandu">
 </head>
 <body>
-	<nav>
-    <a href="/">Home</a> |
-    <a href="/articles/">Articles</a> |
-    <a href="/blog/">Blog</a>
-  </nav>
+  
+  {% include "partials/main-nav.liquid" %}
+	
   <hr>
 
   {{ content }}

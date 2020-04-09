@@ -1,0 +1,19 @@
+---
+layout: layouts/base.liquid
+---
+
+<h1>
+	{{ pageTitle }}
+</h1>
+
+<hr>
+{{ content }}
+<hr>
+
+{% comment %}
+{%- assign testimonials = collections.testimonials | reverse -%}
+{%- for testimonial in testimonials %}
+	<h2><a href="{{ testimonial.url }}">{{ testimonial.data.pageTitle }}</a></h2>
+	<em>{{ testimonial.date | date: "%Y-%m-%d" }}</em>
+{% endfor %}
+{% endcomment %}
