@@ -5,14 +5,17 @@
   <title>{{ pageTitle }}</title>
   <meta name="description" content="Test Bed project for learning how to use 11ty">
   <meta name="author" content="Adrian Sandu">
+
+  <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/base.css' | url }}">
 </head>
 <body>
   
-  {% include "partials/main-nav.liquid" %}
+  {% include "partials/main-nav.njk" %}
 	
   <hr>
 
-  {{ content }}
+  {{ content |safe }}
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 ---
-layout: layouts/home.liquid
-pageTitle: This is my Title
+layout: layouts/home.njk
+pageTitle: Homepage Title
 homeHeading: This is the homepage heading
 ---
 

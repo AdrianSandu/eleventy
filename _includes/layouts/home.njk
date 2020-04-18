@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+---
+
+<h1>{{homeHeading}}</h1>
+
+<hr>
+{{ content | safe }}
+<hr>
+
+<h2>Latest Blog Posts</h2>
+
+{# Get latest 5 blog posts and display them #}
+{% set posts = collections.blog | reverse %}
+
+{% for i in range(0, 5) -%}
+	{% if posts[i] %}
+		{% set post = posts[i] %}
+		
+		<h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+		<em>{{ post.date | dateReadable }}</em>
+	{% endif %}
+{%- endfor %}
+
+<hr>
+
+<h2>Latest Articles</h2>
+
+{# Get latest 5 articles and display them #}
+{% set articles = collections.articles | reverse %}
+
+{% for i in range(0, 5) -%}
+	{% if articles[i] %}
+		{% set article = articles[i] %}
+		
+		<h2><a href="{{ article.url }}">{{ article.data.pageTitle }}</a></h2>
+		<em>{{ article.date | dateReadable }}</em>
+	{% endif %}
+{%- endfor %}
+
+<hr>

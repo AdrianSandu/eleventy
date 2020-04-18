@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/AdrianSandu/eleventy#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.10.0",
+    "clean-css": "^4.2.3",
+    "moment": "^2.24.0"
   }
 }

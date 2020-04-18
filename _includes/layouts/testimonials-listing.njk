@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base.njk
 ---
 
 <h1>
@@ -7,13 +7,13 @@ layout: layouts/base.liquid
 </h1>
 
 <hr>
-{{ content }}
+{{ content | safe }}
 <hr>
 
-{% comment %}
+{# {% comment %}
 {%- assign testimonials = collections.testimonials | reverse -%}
 {%- for testimonial in testimonials %}
 	<h2><a href="{{ testimonial.url }}">{{ testimonial.data.pageTitle }}</a></h2>
 	<em>{{ testimonial.date | date: "%Y-%m-%d" }}</em>
 {% endfor %}
-{% endcomment %}
+{% endcomment %} #}

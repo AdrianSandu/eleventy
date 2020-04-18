@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
+  alias: blog
+---
+
+<h1>
+	Blog Listing: {{ pageTitle }}
+</h1>
+
+<hr>
+{{ content | safe }}
+<hr>
+
+{%- for post in blog %}
+	<h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+	<em>{{ post.date | dateReadable }}</em>
+{% endfor %}

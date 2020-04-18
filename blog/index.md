@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog-listing.liquid
+layout: layouts/blog-listing.njk
 eleventyExcludeFromCollections: true
 pageTitle: This is the Blog Listing page
 ---

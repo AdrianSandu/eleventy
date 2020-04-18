@@ -1,5 +1,5 @@
 ---
-layout: layouts/article-listing.liquid
+layout: layouts/article-listing.njk
 eleventyExcludeFromCollections: true
 pageTitle: This is the Articles Listing page
 ---

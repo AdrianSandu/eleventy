@@ -1,5 +1,10 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base.njk
+pagination:
+  data: collections.articles
+  size: 10
+  reverse: true
+  alias: articles
 ---
 
 <h1>
@@ -7,11 +12,10 @@ layout: layouts/base.liquid
 </h1>
 
 <hr>
-{{ content }}
+{{ content | safe }}
 <hr>
 
-{%- assign articles = collections.articles | reverse -%}
 {%- for article in articles %}
 	<h2><a href="{{ article.url }}">{{ article.data.pageTitle }}</a></h2>
-	<em>{{ article.date | date: "%Y-%m-%d" }}</em>
+	<em>{{ article.date | dateReadable }}</em>
 {% endfor %}

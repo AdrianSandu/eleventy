@@ -1,7 +1,7 @@
 ---
-layout: layouts/base.liquid
+layout: layouts/base.njk
 ---
 
 <h1>Single Article: {{pageTitle}}</h1>
 
-{{ content }}
+{{ content | safe }}
